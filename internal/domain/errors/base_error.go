@@ -4,7 +4,7 @@ type BaseError struct {
 	Message        string
 	Description    string
 	Code           int
-	httpStatusCode int
+	HttpStatusCode int
 }
 
 func (e *BaseError) Error() map[string]interface{} {
@@ -13,8 +13,4 @@ func (e *BaseError) Error() map[string]interface{} {
 	err["description"] = e.Description
 	err["code"] = e.Code
 	return err
-}
-
-func (e *BaseError) HttpStatusCode() int {
-	return e.httpStatusCode
 }
