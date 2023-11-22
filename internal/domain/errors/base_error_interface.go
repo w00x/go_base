@@ -1,6 +1,6 @@
 package errors
 
-type IBaseError interface {
+type BaseErrorInterface interface {
 	Error() map[string]interface{}
 	HttpStatusCode() int
 }

@@ -1,9 +1,9 @@
 package errors
 
 type BaseError struct {
-	Message string
-	Description string
-	Code int
+	Message        string
+	Description    string
+	Code           int
 	httpStatusCode int
 }
 
